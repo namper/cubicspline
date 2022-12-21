@@ -96,7 +96,7 @@ if __name__ == "__main__":
         lambda x: x**4 + 1, n=20, mu=0.5, lmbd=0.5, moment_0=0, moment_n=12
     )
     cubicspline.compute_moments()
-    s_2 = cubicspline.spline_f(6)
-    print("S_2(3/10) :=", s_2(3 / 20))
-    err = cubicspline.check_error_for_spline(s_2, 3 / 20)
+    s_6 = cubicspline.spline_f(6)
+    print("S_2(3/10) :=", s_6(6.5 / 20))
+    err = cubicspline.check_error_for_spline(s_6, 6.5 / 20)
     print("err:=", err)
